@@ -1,19 +1,19 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import Comp1 from './comps/comp1/comp1';
-import Comp2 from './comps/comp2/comp2';
-import './style.scss'
+import React from 'react';
+import {render as renderApp} from 'react-dom';
+import {Provider} from 'react-redux';
+import MyRouter from "./utils/router";
+import store from './utils/store'
+import ErrorBoundary from "./utils/error-boundary/error-boundary";
+import './style/fonts.scss';
+import './style/normalize.scss';
 
+renderApp(<React.StrictMode>
+        <ErrorBoundary>
+            <Provider store={store}>
+                <MyRouter/>
+            </Provider>
+        </ErrorBoundary>
+    </React.StrictMode>,
 
-console.log('new year');
-
-
-const Element = () => {
-    return <div className="app">React Webpack
-        <Comp1/>
-        <Comp2/>
-    </div>
-}
-
-ReactDOM.render(<Element/>, document.getElementById('app'));
+    document.getElementById('app'));
 

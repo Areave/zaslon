@@ -16,36 +16,100 @@ const terserPlugin = new TerserPlugin({
     extractComments: false
 });
 
-const tsRule = {
-    test: /\.tsx$/,
-    use: ['babel-loader', 'ts-loader']
-}
 
-const cssRule = {
-    test: /\.s?css$/,
-    exclude: /node_modules/,
-    use: [MiniCss.loader, 'css-loader', 'sass-loader']
-}
+module.exports = function (_, webpackEnv) {
 
+    const isDevelopment = webpackEnv.mode === 'development';
+    const isProduction = webpackEnv.mode === 'production';
+    const getStyleLoaders = () => {
+        return [
+            isDevelopment && 'style-loader',
+            isProduction && MiniCss.loader,
+            {
+                loader: 'css-loader',
+                options: {
+                    esModule: true,
+                    // modules: {
+                    //     localIdentName: isDevelopment
+                    //         ? '[folder]_[local]_[hash:base64:4]'
+                    //         : '[hash:base64:5]',
+                    // },
+                    sourceMap: isDevelopment,
+                }
+            },
+            {
+                loader: 'postcss-loader',
+                options: {
+                    postcssOptions: {
+                        plugins: ['autoprefixer']
+                    }
+                }
+            },
+            {
+                loader: 'sass-loader',
+                options: {
+                    implementation: require('sass'),
+                    sourceMap: isDevelopment
+                }
+            }
+        ].filter(Boolean);
 
-module.exports = {
-    resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx'],
-    },
-    entry: './src/index.tsx',
-    output: {
-        path: path.resolve(__dirname, 'www'),
-        filename: "./js/[name]_[hash:base64].js",
-        clean: true
-    },
-    module: {
-        rules: [tsRule, cssRule]
-    },
-    optimization: {
-        minimizer: [terserPlugin],
-    },
-    plugins: [htmlWebpackPlugin,  miniCss],
+    };
 
-    // watch: true
+    const tsRule = {
+        test: /\.(ts|tsx)$/,
+        use: ['ts-loader']
+    };
+
+    const cssRule = {
+        test: /\.s?css$/,
+        exclude: /node_modules/,
+        use: getStyleLoaders()
+    };
+
+    const assetsRule = {
+        test: /\.(jpg|jpeg|png|gif|mp3|mp4|svg)$/,
+        exclude: [/node_modules/, /\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
+        use: [{
+            loader: 'file-loader',
+            options: {
+                outputPath: 'media',
+                name: '[name]_[contenthash:8][ext]'
+            }
+        }]
+    };
+
+    console.log(cssRule);
+
+    return {
+        devtool: isDevelopment ? 'cheap-module-source-map' : false,
+        target: ['web', 'es5'],
+        entry: './src/index.tsx',
+        resolve: {
+            extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        },
+
+        output: {
+            path: path.resolve(__dirname, 'www'),
+            filename: isDevelopment ? "./js/[name].js" : "./js/[name]_[contenthash:8].js",
+            chunkFilename: isDevelopment ? "./js/[name].js" : "./js/[name]_[contenthash:8].js",
+            assetModuleFilename: 'assets/[hash][ext]',
+            clean: true
+        },
+
+        module: {
+            rules: [tsRule, cssRule, assetsRule]
+        },
+        optimization: {
+            minimize: isProduction,
+            minimizer: [terserPlugin],
+        },
+        plugins: [htmlWebpackPlugin, miniCss],
+        devServer: {
+            historyApiFallback: true,
+        },
+
+        // watch: true
+    }
 };
 

@@ -22,7 +22,10 @@ body {
 * {
   box-sizing: border-box;
   flex-shrink: 0;
-  font-family: vars.$font-name, sans-serif;
+  font-family: vars.$fontNoirPro;
+  font-size: 20px;
+  line-height: 23px;
+  color: vars.$textColor;
   letter-spacing: .12rem;
   margin: 0;
   padding: 0;

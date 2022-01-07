@@ -10,17 +10,25 @@
   width: 100%;
 }
 
+@mixin forumText {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: vars.$textColor;
+}
 @mixin importantText {
   font-size: 2rem;
   font-weight: bold;
 }
 
 @mixin shadow {
-  box-shadow: 5px 6px 13px -3px rgba(0,0,0,0.67);
+  box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.7);
 }
 
 @mixin forRootElements {
   @include stretch;
-  background-color: vars.$primary;
+  background-color: vars.$grey;
   text-align: center;
 }

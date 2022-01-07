@@ -2,8 +2,8 @@
 @use '../../style/style' as styles;
 
 .welcomeComp {
-  background-color: styles.$secondary;
-  border: 2px solid styles.$third;
+  background-color: styles.$red;
+  border: 2px solid styles.$black;
   position: absolute;
   bottom: 0;
   left: 0;

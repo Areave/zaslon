@@ -1,0 +1,9 @@
+@use './style' as styles;
+
+#app {
+  @include styles.stretch;
+}
+
+.mainWrapper {
+  padding: 40px 60px 0;
+}

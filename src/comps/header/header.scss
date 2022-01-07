@@ -1,0 +1,17 @@
+@use '../../style/style' as vars;
+
+.header {
+  height: 95px;
+  border-bottom: 1px solid vars.$black;
+  display: flex;
+
+  & .left {
+    flex-basis: 75%;
+    background-color: vars.$white;
+  }
+
+  & .right {
+    flex-basis: 25%;
+
+  }
+}

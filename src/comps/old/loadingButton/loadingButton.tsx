@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux';
 import './loadingButton.scss'
-import {switchLoading} from "../../utils/store/actionCreators";
+import {switchLoading} from "../../../utils/store/actionCreators";
 
 const LoadingButton: React.FC<{ label: string, switchLoading: any, isLoading: boolean}> = ({label, switchLoading, isLoading}) => {
 

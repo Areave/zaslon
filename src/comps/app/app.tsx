@@ -1,24 +1,31 @@
-import Page2 from "../page2/page2";
-import MainComponent from "../mainComponent/mainComponent";
-import LoadingButton from "../loadingButton/loadingButton";
-import Loader from "../loader/loader";
-import LoadingTitle from "../loadingTitle/loadingTitle";
-import WelcomeComp from '../welcomeComp/welcomeComp'
+import Page2 from "../old/page2/page2";
+import MainComponent from "../old/mainComponent/mainComponent";
+import LoadingButton from "../old/loadingButton/loadingButton";
+import Loader from "../old/loader/loader";
+import LoadingTitle from "../old/loadingTitle/loadingTitle";
+import WelcomeComp from '../old/welcomeComp/welcomeComp'
 import React from "react";
 import './app.scss';
 import {Types} from '../../utils/types'
 import {connect} from 'react-redux'
+import Header from '../header/header'
+import Footer from '../footer/footer'
+import Authorization from '../authorization/authorization'
 import store from "../../utils/store";
+import MyRouter from "../../utils/router";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const App: React.FC<any> = (props) => {
-
-    return <div className="app">
-        <h1 className="title">React Webpack Template</h1>
-        <MainComponent/>
-        <LoadingButton isLoading={props.isLoading} label='loading'/>
-        <LoadingTitle title='App is loading:' isLoading={props.isLoading}/>
-        {props.isLoading && <Loader/>}
-        <WelcomeComp name={props.name}/>
+    return <div className="mainContainer">
+        <Header/>
+        <div className='content'>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Authorization/>}/>
+                </Routes>
+            </BrowserRouter>
+        </div>
+        <Footer/>
     </div>
 };
 

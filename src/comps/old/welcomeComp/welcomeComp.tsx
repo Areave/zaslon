@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react'
 import {connect} from 'react-redux'
-import {setWelcome} from "../../utils/store/actionCreators";
-import {Types} from '../../utils/types'
+import {setWelcome} from "../../../utils/store/actionCreators";
+import {Types} from '../../../utils/types'
 import './welcomeComp.scss'
 
 

@@ -1,15 +1,15 @@
-@use '../../style/style' as styles;
+@use '../../style/style' as vars;
 
-.app {
-  padding: 50px;
-  @include styles.forRootElements;
+.mainContainer {
+  @include vars.stretch;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: vars.$grey;
+}
 
-  & .title {
-    padding-bottom: 20px;
-  }
+.content {
+  flex: 0 1 auto;
 
-  & a {
-    color: styles.$danger;
-    font-weight: bold;
-  }
+  height: 100%;
 }

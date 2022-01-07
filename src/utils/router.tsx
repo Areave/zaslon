@@ -1,15 +1,15 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import App from '../comps/app/app'
-import Comp1 from "../comps/comp1/comp1";
+import App from '../comps/app/app';
+import Page2 from "../comps/page2/page2";
 
-const MyRouter: React.FC<any> = (props) => {
+const MyRouter = () => {
     return <BrowserRouter>
         <Routes>
             <Route path='/' element={<App/>}/>
-            <Route path='/comp1' element={<Comp1/>}/>
+            <Route path='/page2' element={<Page2/>}/>
         </Routes>
     </BrowserRouter>
 }
 
-export default MyRouter
+export default MyRouter;

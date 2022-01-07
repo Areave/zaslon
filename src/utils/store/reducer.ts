@@ -1,13 +1,18 @@
-import {Store} from '../types'
+import {Types} from '../types'
 
 const initialState = {
-    isLoading: false
+    isLoading: false,
+    name: ''
 }
 
-const reducer = (state: Store.State, action: Store.Action) => {
+const reducer = (state: Types.State, action: Types.Action) => {
     switch (action.type) {
-        case 'switchLoading':
+        case 'SET_WELCOME':
+            return {...state, name: action.payload};
+            break;
+        case 'SET_LOADING':
             return {...state, isLoading: !state.isLoading};
+            break;
     }
     return initialState;
 }

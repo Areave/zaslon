@@ -1,6 +1,6 @@
 @use '../../style/style' as styles;
 
-.app {
+.page2 {
   padding: 50px;
   @include styles.forRootElements;
 
@@ -9,7 +9,6 @@
   }
 
   & a {
-    color: styles.$danger;
     font-weight: bold;
   }
 }

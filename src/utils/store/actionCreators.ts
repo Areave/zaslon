@@ -12,3 +12,10 @@ export const switchLoading: () => Types.Action = () => {
         type: 'SET_LOADING'
     }
 }
+
+// export const setForumSections: (forumSections: any) => Types.Action = (forumSections) => {
+//     return {
+//         type: 'SET_FORUM_SECTIONS',
+//         payload: forumSections
+//     }
+// }

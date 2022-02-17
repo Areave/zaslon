@@ -1,0 +1,116 @@
+@use '../../style/style' as vars;
+
+
+.thread-message-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 3vh;
+
+  .thread-message {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    //align-items: flex-start;
+    @include vars.borderDarkGrey;
+    @include vars.borderBottomRadius;
+    @include vars.shadow;
+    background-color: white;
+
+
+    & .author-card__wrapper {
+      flex-basis: 15%;
+      border-right: 1px solid vars.$darkGrey;
+    }
+
+    & .messages {
+      flex-basis: 85%;
+      min-height: 100%;
+
+      &-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+
+        & * {
+          font-size: 2.3vh;
+        }
+        &__header {
+          height: 5vh;
+          border-bottom: 1px solid vars.$darkGrey;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 20px;
+
+          &__pencil-wrapper,
+          &__garbage-wrapper {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+
+            & img {
+              max-height: 100%;
+              max-width: 100%;
+              cursor: pointer;
+            }
+
+          }
+        }
+
+        &__text {
+          //border-bottom: 1px solid vars.$darkGrey;
+          flex-grow: 1;
+          padding: 3vh;
+        }
+
+        &__footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding: 15px;
+
+          &__stats {
+            display: flex;
+            align-items: flex-end;
+
+            & > * {
+              margin-left: 20px;
+            }
+
+
+            & .like-wrapper,
+            & .dislike-wrapper {
+              display: flex;
+
+
+              & .stats {
+                margin-left: 8px;
+              }
+
+              & img {
+                max-height: 100%;
+                max-width: 100%;
+                cursor: pointer;
+
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .answers {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+}
+

@@ -1,9 +1,10 @@
-@use './style' as styles;
+@use './style' as vars;
 
 #app {
-  @include styles.stretch;
+  @include vars.stretch;
 }
 
-.mainWrapper {
-  padding: 40px 60px 0;
+.content-wrapper {
+  @include vars.contentPadding;
+  overflow-y: scroll;
 }

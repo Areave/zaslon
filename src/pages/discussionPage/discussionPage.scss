@@ -1,0 +1,25 @@
+@use '../../style/style' as vars;
+
+.discussion-page {
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: vars.$white;
+    padding: 12px;
+    @include vars.borderDarkGrey;
+    @include vars.borderBottomRadius;
+    margin-bottom: 3vh;
+
+    .tread-name{
+      @include vars.title;
+    }
+
+    .ask-question {
+      @include vars.title-with-hover;
+
+    }
+  }
+
+}

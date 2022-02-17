@@ -23,12 +23,56 @@ color: vars.$textColor;
   font-weight: bold;
 }
 
-@mixin shadow {
-  box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.7);
+@mixin contentPadding {
+  padding: 44px 60px;
+  height: 100%;
+  width: 100%;
 }
 
-@mixin forRootElements {
-  @include stretch;
-  background-color: vars.$grey;
-  text-align: center;
+@mixin shadow {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5);
 }
+@mixin borderRed {
+  border: 1px solid vars.$red;
+}
+@mixin borderGrey {
+  border: 1px solid vars.$grey;
+}
+@mixin borderDarkGrey {
+  border: 1px solid vars.$darkGrey;
+}
+
+@mixin borderBottomRadius {
+  border-bottom-right-radius: vars.$borderBottomRadius;
+  border-bottom-left-radius: vars.$borderBottomRadius
+}
+
+@mixin title {
+  font-size: 2vh;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-underline-position: under;
+}
+
+@mixin title-with-hover {
+
+  @include title;
+
+  &:hover {
+    color: vars.$darkGrey;
+    text-decoration-color: vars.$darkGrey;
+    cursor: pointer;
+  }
+}
+
+
+
+//@mixin forRootElements {
+//  @include stretch;
+//  background-color: vars.$grey;
+//  text-align: center;
+//}
+
+
+// Maps
+//$border: ('red': 1px solid vars.$red, 'grey': 1px solid vars.$grey);

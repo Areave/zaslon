@@ -1,0 +1,69 @@
+@use '../../style/style' as vars;
+
+.thread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: vars.$white;
+  padding: 12px;
+  @include vars.borderGrey;
+  @include vars.borderBottomRadius;
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  & * {
+    font-size: 1.85vh;
+  }
+
+  &-name {
+    flex-basis: 37%;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @include vars.title-with-hover;
+
+  }
+
+  &-messages,
+  &-rating {
+
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 12%;
+
+    & img {
+      margin-left: 10px;
+    }
+  }
+
+  &-messages {
+
+  }
+
+  &-rating {
+    flex-basis: 8%;
+  }
+
+  &-subscribe-button {
+    padding: 5px;
+    font-size: 1.7vh;
+    background-color: vars.$white;
+    flex-basis: 15%;
+    @include vars.borderBottomRadius;
+    @include vars.borderGrey;
+    cursor: pointer;
+
+    &:hover {
+      background-color: vars.$grey;
+
+    }
+
+  }
+}

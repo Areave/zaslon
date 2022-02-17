@@ -1,0 +1,101 @@
+@use '../../style/style' as vars;
+
+.authorization {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+
+  & .authorization-wrapper {
+    width: 30%;
+    height: 80%;
+    background-color: white;
+    @include vars.shadow;
+    @include vars.borderBottomRadius;
+
+    & .authorization-form {
+      display: flex;
+      flex-direction: column;
+      padding: 10%;
+
+      height: 100%;
+      justify-content: space-between;
+
+      & >* {
+        width: 100%;
+
+      }
+
+      & .login, & .password {
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        margin-bottom: 2vh;
+
+        & .label {
+          display: block;
+          font-size: 2vh;
+          margin-bottom: 1vh;
+          height: 50%;
+        }
+
+        & input {
+          height: 50%;
+          @include vars.borderRed;
+          font-size: 2vh;
+          padding: 1vh 1vw;
+        }
+      }
+
+      & .remember-wrapper {
+        cursor: pointer;
+        margin-bottom: 2vh;
+        & .checkbox-label {
+          font-size: 2vh;
+          padding-left: 10px;
+        }
+      }
+
+      & .buttons-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+
+        & button {
+          font-size: 2vh;
+          width: 100%;
+          padding: 1.5vh;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+
+        & .registration-button {
+          background-color: vars.$red;
+          color: white;
+          &:hover {
+            background-color: vars.$darkRed;
+          }
+        }
+
+        & .login-button {
+          background-color: white;
+          @include vars.borderGrey;
+          &:hover {
+            background-color: vars.$grey;
+          }
+        }
+
+      }
+
+      & .forget-password {
+        font-size: 2vh;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+
+
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 546,
+  "name": "Андрей Петров",
+  "role": "moderator",
+  "messagesAmount": 583,
+  "image": "https://thispersondoesnotexist.com/image",
+  "reputation": 78,
+  "registrationDate": "12.01.2020",
+  "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lacus vehicula, consectetur ipsum gravida, condimentum quam. Suspendisse at viverra odio. Fusce in arcu lectus. Nam quis dolor consectetur, tincidunt est et, tempor turpis. Duis justo mi, ornare eget leo vitae, congue condimentum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "scills": [
+    "Java",
+    "SQL",
+    "Ruby",
+    "Assembler"
+  ],
+  "describeAmount": 5,
+  "themesAmount": 8,
+  "answers": 23
+}

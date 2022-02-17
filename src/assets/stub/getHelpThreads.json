@@ -1,0 +1,66 @@
+[
+  {"sectionId" :  1,
+    "threads": [
+      {
+        "id": 1,
+        "threadNum":1,
+        "name": "пресс качат",
+        "messagesAmount": 24,
+        "rating":5
+      },
+      {
+        "id": 2,
+        "threadNum": 2,
+        "name": "бегит",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "threadNum": 3,
+        "name": "турник",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "threadNum": 4,
+        "name": "анжуманя",
+        "messagesAmount":  24,
+        "rating": 5
+      }
+    ]
+  },
+  {"sectionId" :  2,
+    "threads": [
+      {
+        "id": 5,
+        "threadNum": 1,
+        "name": "апять пресс качат",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 6,
+        "threadNum": 2,
+        "name": "апять бегит",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 7,
+        "threadNum": 3,
+        "name": "апять турник",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 8,
+        "threadNum": 4,
+        "name": "апять анжуманя",
+        "messagesAmount":  24,
+        "rating": 5
+      }
+    ]
+  }
+]

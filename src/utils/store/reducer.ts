@@ -1,7 +1,7 @@
 import {Types} from '../types'
 
 const initialState = {
-    isLoading: false,
+    sections: false,
     name: ''
 }
 
@@ -13,6 +13,9 @@ const reducer = (state: Types.State, action: Types.Action) => {
         case 'SET_LOADING':
             return {...state, isLoading: !state.isLoading};
             break;
+    //     case 'SET_FORUM_SECTIONS':
+    //         return {...state, forumSections: action.payload};
+    //         break;
     }
     return initialState;
 }

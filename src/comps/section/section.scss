@@ -1,0 +1,138 @@
+@use '../../style/style' as vars;
+
+.forum {
+    margin-bottom: 3vh;
+  @include vars.shadow;
+  @include vars.borderBottomRadius;
+
+  &.open {
+    & .forum-section {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    & .forum-section-trigger-img {
+      transform: rotate(0deg);
+    }
+  }
+
+
+  &-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: vars.$white;
+  padding: 20px;
+  @include vars.borderGrey;
+  @include vars.borderBottomRadius;
+
+  & * {
+    font-size: 2.2vh;
+  }
+
+  &-title {
+    flex-basis: 40%;
+    flex-shrink: 0;
+    display: flex;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-trigger {
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+
+    & img {
+      transform: rotate(-90deg);
+      transition: transform .3s;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &-name {
+    //text-decoration: underline;
+    //text-underline-position: under;
+    font-weight: bold;
+
+    line-height: 44px;
+    overflow: hidden;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      color: vars.$darkGrey;
+    }
+
+  }
+
+  &-messages-title,
+  &-rating-title {
+    font-size: 1.7vh;
+    text-align: center;
+    vertical-align: middle;
+    //transform: all .7s;
+    font-weight: bold;
+
+  }
+
+  &-messages-title {
+    flex-basis: 15%;
+  }
+
+  &-rating-title {
+    flex-basis: 8%;
+  }
+
+  & .create-section-button {
+    padding: 5px;
+    font-size: 1.7vh;
+    background-color: vars.$red;
+    flex-basis: 20%;
+    color: white;
+    @include vars.borderBottomRadius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: vars.$darkRed;
+    }
+  }
+
+}
+
+  &-threads {
+    padding: 20px;
+    //padding-top: 40px;
+    //transform: translateY(-20px);
+    padding-top: 0;
+    background-color: vars.$white;
+    @include vars.borderBottomRadius;
+
+
+    & * {
+      font-size: 2vh;
+    }
+
+    & .show-all {
+      padding: 20px 20px 0 20px;
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        color: vars.$darkGrey;
+      }
+    }
+        & .no-threads {
+      padding: 20px 20px 0 20px;
+      font-weight: bold;
+    }
+
+  }
+
+}
+

@@ -1,17 +1,165 @@
 @use '../../style/style' as vars;
 
 .header {
-  height: 95px;
-  border-bottom: 1px solid vars.$black;
+  position: absolute;
+  //padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: vars.$intend;
+  @include vars.shadow;
   display: flex;
+  font-size: 1vh;
 
   & .left {
+    display: flex;
     flex-basis: 75%;
+    padding: 2vh;
     background-color: vars.$white;
+
+    & .menu {
+      flex-basis: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      //padding: 15px;
+      align-items: center;
+
+
+      & .menu_icon {
+        width: 35%;
+        height: 100%;
+        padding: 1.5vh 1.7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        & span {
+          height: 3px;
+          background-color: vars.$black;
+
+        }
+
+      }
+
+      & .menu_text {
+        text-align: left;
+        //padding: 15px 0 15px 10px;
+        padding: 1.5vh 1.7vh;
+        //font-size: 24px;
+        width: 65%;
+        height: 100%;
+        line-height: 100%;
+        vertical-align: center;
+        padding-left: 7px;
+        cursor: pointer;
+      }
+    }
+
+    & .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 15%;
+      height: 100%;
+      border-left: 1px solid vars.$darkGrey;
+      cursor: pointer;
+
+      & img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    & .search {
+      //flex-basis: 70%;
+      flex-grow: 1;
+      height: 100%;
+      //padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .search-input {
+
+        font-size: 2.5vh;
+        @include vars.borderRed;
+        width: 90%;
+        height: 80%;
+        padding: 5px 20px;
+
+      }
+
+      & .search-button {
+        //padding: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        width: 5%;
+        height: 80%;
+        @include vars.borderRed;
+        border-left: none;
+        cursor: pointer;
+        background-color: white;
+
+
+        & .search-icon {
+          max-height: 100%;
+          max-width: 100%;
+
+        }
+      }
+    }
   }
 
   & .right {
+    //padding: 22px 25px;
     flex-basis: 25%;
+    background-color: vars.$grey;
+    display: flex;
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+
+
+    & >* {
+      flex-basis: 25%;
+      //font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //padding: 1vh 1vw;
+      font-size: 2.5vh;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border-right: 1px solid vars.$darkGrey;
+      cursor: pointer;
+
+      &:hover {
+        color: vars.$darkGrey;
+      }
+
+      & img {
+        max-width: 50%;
+        max-height: 50%;
+        &:hover {
+          color: vars.$darkGrey;
+        }
+      }
+    }
+
+    & >*:last-child {
+      border-right: none;
+    }
+
+    & .notifications,
+    & .messages {
+      //flex-basis: 20%;
+      //font-size: 24px;
+    }
 
   }
 }

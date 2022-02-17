@@ -1,0 +1,43 @@
+@use '../../style/style' as vars;
+
+.profile-page {
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: vars.$white;
+    padding: 12px;
+    @include vars.borderDarkGrey;
+    @include vars.borderBottomRadius;
+
+    margin-bottom: 3vh;
+
+    .profile-name {
+      @include vars.title;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+    @include vars.borderDarkGrey;
+    @include vars.borderBottomRadius;
+    @include vars.shadow;
+      background-color: white;
+  }
+
+    &__author-card-wrapper {
+      flex-basis: 15%;
+
+    }
+
+    &__author-info-wrapper {
+      width: 80%;
+
+    }
+  }
+
+}

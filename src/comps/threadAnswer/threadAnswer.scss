@@ -1,0 +1,87 @@
+@use '../../style/style' as vars;
+
+
+.thread-answer {
+  width: 85%;
+  @include vars.borderDarkGrey;
+  @include vars.borderBottomRadius;
+  @include vars.shadow;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  & * {
+    font-size: 2.3vh;
+  }
+
+  &__message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px;
+
+
+
+    &__sign {
+      display: flex;
+
+      &__author {
+        margin-right: 10px;
+        color: vars.$blue;
+        text-decoration: underline;
+        text-underline-position: under;
+        cursor: pointer;
+
+        &:hover {
+          color: vars.$darkBlue;
+          text-underline: vars.$darkBlue;
+        }
+      }
+
+
+    }
+
+    &__stats {
+      display: flex;
+      align-items: flex-end;
+
+      & > * {
+        margin-left: 20px;
+
+        & img {
+          cursor: pointer;
+          color:red;
+        }
+
+      }
+      & .like-wrapper,
+      & .dislike-wrapper {
+        display: flex;
+
+
+        & .stats {
+          margin-left: 8px;
+        }
+
+        & img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+}
+

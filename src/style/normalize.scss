@@ -4,31 +4,34 @@
 //------------------------------------------------------------------------------
 
 html {
-  font-size: 10px;
+  //font-size: 10px;
 }
 
 html, body, #root, main {
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 body {
   margin: 0;
-  font-size: 1.4rem;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
   flex-shrink: 0;
-  font-family: vars.$fontNoirPro;
-  font-size: 20px;
+  font-family: vars.$fontRoboto;
+  font-size: 3vh;
   line-height: 23px;
   color: vars.$textColor;
-  letter-spacing: .12rem;
+  //letter-spacing: .12rem;
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
+}
+
+img {
+  display: block;
 }

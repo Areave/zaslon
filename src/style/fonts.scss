@@ -2,32 +2,99 @@
 
 //------------------------------------------------------------------------------
 
-@font-face {
-  font-family: vars.$fontNoirPro;
-  src: url('../assets/font/#{vars.$fontNoirPro}-Regular.eot');
-  src: url('../assets/font/#{vars.$fontNoirPro}-Regular.woff');
-  src: url('../assets/font/#{vars.$fontNoirPro}-Regular.woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+/* abel-regular - latin */
+//@font-face {
+//  font-family: 'Abel';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url('../assets/font/abel-v12-latin-regular.eot'); /* IE9 Compat Modes */
+//  src: local(''),
+//  url('../assets/font/abel-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//  url('../assets/font/abel-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+//  url('../assets/font/abel-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+//  url('../assets/font/abel-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+//  url('../assets/font/abel-v12-latin-regular.svg#Abel') format('svg'); /* Legacy iOS */
+//}
 
 //------------------------------------------------------------------------------
 
-@font-face {
-  font-family: vars.$fontNoirPro;
-  src: url('../assets/font/#{vars.$fontNoirPro}-Medium.eot');
-  src: url('../assets/font/#{vars.$fontNoirPro}-Medium.woff');
-  src: url('../assets/font/#{vars.$fontNoirPro}-Medium.woff2');
-  font-weight: 200;
-  font-style: normal;
-}
+//@font-face {
+//  font-family: vars.$fontNoirPro;
+//  src: url('../assets/font/#{vars.$fontNoirPro}-Regular.eot');
+//  src: url('../assets/font/#{vars.$fontNoirPro}-Regular.woff');
+//  src: url('../assets/font/#{vars.$fontNoirPro}-Regular.woff2');
+//  font-weight: normal;
+//  font-style: normal;
+//}
 
+//------------------------------------------------------------------------------
+
+//@font-face {
+  //font-family: vars.$fontNoirPro;
+  //src: url('../assets/font/#{vars.$fontNoirPro}-Medium.eot');
+  //src: url('../assets/font/#{vars.$fontNoirPro}-Medium.woff');
+  //src: url('../assets/font/#{vars.$fontNoirPro}-Medium.woff2');
+  //font-weight: 200;
+  //font-style: normal;
+//}
+
+//@font-face {
+//  font-family: vars.$fontRoboto;
+//  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.eot');
+//  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.woff');
+//  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.woff2');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+
+/* #{vars.$fontRoboto}-300 - latin_cyrillic */
 @font-face {
   font-family: vars.$fontRoboto;
-  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.eot');
-  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.woff');
-  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.woff2');
-  font-weight: normal;
   font-style: normal;
+  font-weight: 300;
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-300.woff2') format('woff2'); /* Super Modern Browsers */
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-300.woff') format('woff'); /* Modern Browsers */
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-300.ttf') format('truetype');/* Safari, Android, iOS */
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-300.svg##{vars.$fontRoboto}') format('svg'); /* Legacy iOS */
 }
-
+/* #{vars.$fontRoboto}-regular - latin_cyrillic */
+@font-face {
+  font-family: vars.$fontRoboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-regular.svg##{vars.$fontRoboto}') format('svg'); /* Legacy iOS */
+}
+/* #{vars.$fontRoboto}-500 - latin_cyrillic */
+@font-face {
+  font-family: vars.$fontRoboto;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-500.svg##{vars.$fontRoboto}') format('svg'); /* Legacy iOS */
+}
+/* #{vars.$fontRoboto}-700 - latin_cyrillic */
+@font-face {
+  font-family: vars.$fontRoboto;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../assets/font/#{vars.$fontRoboto}-v29-latin_cyrillic-700.svg##{vars.$fontRoboto}') format('svg'); /* Legacy iOS */
+}

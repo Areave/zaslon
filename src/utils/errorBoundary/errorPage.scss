@@ -2,7 +2,7 @@
 
 .errorPage {
   padding: 50px;
-  @include styles.forRootElements;
+  //@include styles.forRootElements;
 
   & .message {
     padding: 20px;

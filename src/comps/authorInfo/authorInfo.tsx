@@ -10,6 +10,8 @@ const AuthorInfo: React.FC<any> = ({info}) => {
 
     const {registrationDate, about, scills, describeAmount, themesAmount, answers} = info;
 
+    console.log(info)
+
     return <div className='info-card'>
         <div className="info-card__header">
             <div className="info-card__header__date">{'Дата регистрации: ' + registrationDate}</div>

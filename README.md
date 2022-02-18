@@ -1,3 +1,128 @@
+# ZASLON
+
+Фронтэнд
+
+> ⚠ Перед началом работы должны быть установлены NodeJs/npm
+>
+## Порядок установки
+
+1. Открыть проект в среде разработки и запустить из корневой папки:
+
+```console
+npm install
+```
+
+
+2. Запустить сборку в режиме development. Проект откроется в браузере по умолчанию по адресу http://localhost:8080
+
+```console
+npm start
+```
+
+Следующая команда собирает готовый бандл в папке /www
+
+```console
+npm run build
+```
+
+
+
+### Заглушки
+
+
+
+**getSections.json**
+
+```javascript
+[
+  {
+    "id": 1,
+    "name": "Административное управление"
+  },
+  {
+    "id": 2,
+    "name": "Раздел 2. Работа с проектной документацией и ГОСТами"
+  },
+  {
+    "id": 3,
+    "name": "Анализ бизнес-процессов"
+  }
+]
+```
+**getThreads.json**
+
+```javascript
+[
+  {"sectionId" :  1,
+    "threads": [
+      {
+        "id": 1,
+        "threadNum":1,
+        "name": "Тема 1. Как стать РЗЗ?",
+        "messagesAmount": 24,
+        "rating":5
+      },
+      {
+        "id": 2,
+        "threadNum": 2,
+        "name": "Тема 2. Что такое МЭО, как его оформить?",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "threadNum": 3,
+        "name": "Тема 3. Выделение лимитов на работу.",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "threadNum": 4,
+        "name": "Тема 4. ГГ и СПГ, что лучше, и для кого.",
+        "messagesAmount":  24,
+        "rating": 5
+      }
+    ]
+  },
+  {"sectionId" :  2,
+    "threads": [
+      {
+        "id": 5,
+        "threadNum": 1,
+        "name": "Тема 1. Как стать РЗЗ?",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 6,
+        "threadNum": 2,
+        "name": "Тема 2. Что такое МЭО, как его оформить?",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 7,
+        "threadNum": 3,
+        "name": "Тема 3. Выделение лимитов на работу.",
+        "messagesAmount":  24,
+        "rating": 5
+      },
+      {
+        "id": 8,
+        "threadNum": 4,
+        "name": "Тема 4. ГГ и СПГ, что лучше, и для кого.",
+        "messagesAmount":  24,
+        "rating": 5
+      }
+    ]
+  }
+]
+```
+
+**getProfileInfo.json**
+
+```javascript
 {
   "id": 1,
   "threadNum": 1,
@@ -72,3 +197,28 @@
     }
   ]
 }
+```
+
+**getThread1.json**
+
+```javascript
+{
+  "id": 546,
+  "name": "Николай Гоголь",
+  "role": "moderator",
+  "messagesAmount": 583,
+  "image": "https://thispersondoesnotexist.com/image",
+  "reputation": 78,
+  "registrationDate": "12.01.2020",
+  "about": "Человеку, который вышел из дому в светлой праздничной одежде, стоит только быть обрызнуту одним пятном грязи из-под колеса, и уже весь народ обступил его и указывает на него пальцем и толкует об его неряшестве, тогда как тот же народ не замечает множества пятен на других проходящих, одетых в будничные одежды. Ибо на будничных одеждах не замечаются пятна.",
+  "scills": [
+    "Java",
+    "SQL",
+    "Ruby",
+    "Assembler"
+  ],
+  "describeAmount": 5,
+  "themesAmount": 8,
+  "answers": 23
+}
+```

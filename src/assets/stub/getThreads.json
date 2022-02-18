@@ -4,28 +4,28 @@
       {
         "id": 1,
         "threadNum":1,
-        "name": "пресс качат",
+        "name": "Тема 1. Как стать РЗЗ?",
         "messagesAmount": 24,
         "rating":5
       },
       {
         "id": 2,
         "threadNum": 2,
-        "name": "бегит",
+        "name": "Тема 2. Что такое МЭО, как его оформить?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 3,
         "threadNum": 3,
-        "name": "турник",
+        "name": "Тема 3. Выделение лимитов на работу.",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 4,
         "threadNum": 4,
-        "name": "анжуманя",
+        "name": "Тема 4. ГГ и СПГ, что лучше, и для кого.",
         "messagesAmount":  24,
         "rating": 5
       }
@@ -36,28 +36,28 @@
       {
         "id": 5,
         "threadNum": 1,
-        "name": "апять пресс качат",
+        "name": "Тема 1. Как стать РЗЗ?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 6,
         "threadNum": 2,
-        "name": "апять бегит",
+        "name": "Тема 2. Что такое МЭО, как его оформить?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 7,
         "threadNum": 3,
-        "name": "апять турник",
+        "name": "Тема 3. Выделение лимитов на работу.",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 8,
         "threadNum": 4,
-        "name": "апять анжуманя",
+        "name": "Тема 4. ГГ и СПГ, что лучше, и для кого.",
         "messagesAmount":  24,
         "rating": 5
       }

@@ -1,12 +1,12 @@
 {
   "id": 546,
-  "name": "Андрей Петров",
+  "name": "Николай Гоголь",
   "role": "moderator",
   "messagesAmount": 583,
   "image": "https://thispersondoesnotexist.com/image",
   "reputation": 78,
   "registrationDate": "12.01.2020",
-  "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut lacus vehicula, consectetur ipsum gravida, condimentum quam. Suspendisse at viverra odio. Fusce in arcu lectus. Nam quis dolor consectetur, tincidunt est et, tempor turpis. Duis justo mi, ornare eget leo vitae, congue condimentum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "about": "Человеку, который вышел из дому в светлой праздничной одежде, стоит только быть обрызнуту одним пятном грязи из-под колеса, и уже весь народ обступил его и указывает на него пальцем и толкует об его неряшестве, тогда как тот же народ не замечает множества пятен на других проходящих, одетых в будничные одежды. Ибо на будничных одеждах не замечаются пятна.",
   "scills": [
     "Java",
     "SQL",

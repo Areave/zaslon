@@ -21,9 +21,9 @@ const ProfilePage: React.FC<any> = () => {
 
     if (!profile) return <Loader/>
 
-    const {name, role, image, messagesAmount, reputation, registrationDate, about, scills, describeAmount, answers} = profile;
+    const {name, role, image, messagesAmount, reputation, registrationDate, about, scills, describeAmount, themesAmount, answers} = profile;
     const author = {id, name, role, image, messagesAmount, reputation};
-    const info = {registrationDate, about, scills, describeAmount, answers};
+    const info = {registrationDate, about, scills, themesAmount, describeAmount, answers};
 
     return <div className="profile-page">
         <div className="profile-page__header">

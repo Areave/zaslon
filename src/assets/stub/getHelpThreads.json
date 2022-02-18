@@ -4,28 +4,28 @@
       {
         "id": 1,
         "threadNum":1,
-        "name": "пресс качат",
+        "name": "Как восстановить пароль?",
         "messagesAmount": 24,
         "rating":5
       },
       {
         "id": 2,
         "threadNum": 2,
-        "name": "бегит",
+        "name": "Как восстановить логин?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 3,
         "threadNum": 3,
-        "name": "турник",
+        "name": "Взлом аккаунта",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 4,
         "threadNum": 4,
-        "name": "анжуманя",
+        "name": "Как удалить/написать сообщение?",
         "messagesAmount":  24,
         "rating": 5
       }
@@ -36,28 +36,28 @@
       {
         "id": 5,
         "threadNum": 1,
-        "name": "апять пресс качат",
+        "name": "Как удалить свой профиль?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 6,
         "threadNum": 2,
-        "name": "апять бегит",
+        "name": "Как изменить изображение профиля?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 7,
         "threadNum": 3,
-        "name": "апять турник",
+        "name": "Как изменить данные профиля?",
         "messagesAmount":  24,
         "rating": 5
       },
       {
         "id": 8,
         "threadNum": 4,
-        "name": "апять анжуманя",
+        "name": "Как отредактировать сообщение?",
         "messagesAmount":  24,
         "rating": 5
       }

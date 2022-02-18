@@ -120,7 +120,8 @@ npm run build
 ]
 ```
 
-**getProfileInfo.json**
+
+**getThread1.json**
 
 ```javascript
 {
@@ -199,7 +200,7 @@ npm run build
 }
 ```
 
-**getThread1.json**
+**getProfileInfo.json**
 
 ```javascript
 {
